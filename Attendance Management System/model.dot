@@ -1,0 +1,13 @@
+digraph G {
+    rankdir=TB;
+    node [shape=box];
+
+    input [label="Input Layer\n(784)"];
+    hidden1 [label="Hidden Layer 1\n(128)"];
+    hidden2 [label="Hidden Layer 2\n(64)"];
+    output [label="Output Layer\n(10)"];
+
+    input -> hidden1;
+    hidden1 -> hidden2;
+    hidden2 -> output;
+}

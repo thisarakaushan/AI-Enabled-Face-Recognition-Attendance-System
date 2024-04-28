@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Recognition Attendance</title>
+    <link rel="stylesheet" href="styles_main_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav style="justify-content: space-between">
+        <div class="home">
+          <a href="index1.html">AttendanceAI</a>
+        </div>
+        <div class="links">
+          <a href="">Home</a>
+          <a href="#selectinput">Select Input Method</a>
+          <a href="#checkattendance">Check Attendance</a>
+        </div>
+      </nav>
+      <div class="topimg">
+        <img src="6.png" alt="" />
+      </div>
+      <div class="entermethod" id="selectinput">
+        <div class="buttonclass">
+          <h3>Enter a Method to take the attendance</h3>
+          <div class="buttons">
+            <button>Turn On Camera</button>
+            <button>Upload an Image(s)</button>
+          </div>
+        </div>
+        <img src="7.png" />
+      </div>
+      <div class="checkattendance" id="checkattendance">
+        <div class="left">
+          <img src="8.jpeg" />
+        </div>
+        <div class="right">
+          <h3>Enter the details to check attendance</h3>
+          <div class="datepicking">
+            <label for="datepicking">Enter the Date :</label>
+            <input type="date" placeholder="Enter the date" />
+          </div>
+          <div class="fromtimepicking">
+            <label for="fromtimepicking">Enter the From Time:</label>
+            <input type="time" name="" id="" />
+          </div>
+          <div class="totimepicking">
+            <label for="totimepicking">Enter the To Time :</label>
+            <input type="time" name="" id="" />
+          </div>
+          <button>Submit</button>
+        </div>
+      </div>
+      <div class="results"></div>
+    </div>
+    <script src="script1.js"></script>
+  </body>
+</html>

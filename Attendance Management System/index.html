@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face Recognition Attendance</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Face Recognition Attendance</h1>
+
+      <div class="capture">
+        <button id="captureButton">
+          Capture Live Image
+          <i class="fa-solid fa-camera"></i>
+        </button>
+
+        <button id="uploadImageButton">
+          Upload Image
+          <i class="fa-regular fa-image"></i>
+        </button>
+      </div>
+
+      <div class="params">
+        <button id="dateButton">
+          Enter the date
+          <i class="fa-solid fa-calendar-days"></i>
+          <input type="date" id="dateInput" hidden />
+        </button>
+        <button id="fromTimeButton">
+          Enter the From Time
+          <i class="fa-solid fa-clock"></i>
+          <input type="time" id="fromTimeInput" hidden />
+        </button>
+        <button id="toTimeButton">
+          Enter the To Time
+          <i class="fa-solid fa-clock"></i>
+          <input type="time" id="toTimeInput" hidden />
+        </button>
+      </div>
+
+      <div class="submit">
+        <button id="submitButton">
+          Submit
+          <i class="fa-solid fa-arrow-turn-up fa-rotate-90"></i>
+        </button>
+        <button id="clearButton">
+          Clear All
+          <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+      </div>
+
+      <div id="resultContainer">
+        <h2>Results:</h2>
+        <ul id="resultList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
